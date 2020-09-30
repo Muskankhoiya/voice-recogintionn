@@ -1,0 +1,37 @@
+#! /usr/bin/python3
+
+import cgi
+import subprocess
+
+print("content-type: text/html")
+print()
+
+<body bgcolor="white">
+
+    <center>
+        <h1><samp>LAUNCH DOCKER CONTAINER!!!!</samp></h1>
+        <img src="https://muskiibucket.s3.ap-south-1.amazonaws.com/final.jpg" height="300px" width="1000px" />
+
+      </center>
+
+</body>
+
+
+      </center>
+
+
+<form action ="http://13.233.116.146/cgi-bin/docker.py">
+
+<center>
+
+   <h2><kbd> Enter your osname </kbd></h2><input type='text' name='x' />
+<h2><kbd> Select your os image name:</kbd></h2>
+<select name='i'>
+        <option>ubuntu:14.04<option>
+        <option>centos:latest<option>
+        <option>httpd:latest<option>
+</select>
+<br>
+<input type='submit' />
+</center>
+<form>
